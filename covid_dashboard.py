@@ -122,7 +122,7 @@ def main():
     
     st.title("COVID-19 Dashboard")
     st.markdown("---")
-    st.warning('For some Countries you might notice some fields are incorrectly showing 0, this is due to db is updated at different time in different countries.')
+    st.error('For some Countries you might notice some fields are incorrectly showing 0, this is due to db is updated at different time in different countries.')
 
     x = st.text_input("Enter Country Name. (View COuntries Names in sidebar)",'India')
     y = data_prepare(x)
