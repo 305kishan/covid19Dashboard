@@ -124,7 +124,7 @@ def main():
     st.markdown("---")
     st.error('For some Countries you might notice some fields are incorrectly showing 0, this is due to db is updated at different time in different countries.')
 
-    x = st.text_input("Enter Country Name. (View COuntries Names in sidebar)",'India')
+    x = st.text_input("Enter Country Name. (View Countries Names in sidebar)",'India')
     y = data_prepare(x)
     z = data['Country/Region'].to_list()
     z = np.unique(z).tolist()
